@@ -1,7 +1,9 @@
 body{margin-top:20px;
     background:#eee;
     }
-    
+#person-card{
+    width: 350px;
+}    
     /* CONTACTS */
     .contact-box {
       background-color: #ffffff;
