@@ -6,7 +6,7 @@ function loadPerson(data){
         var randNum = Math.floor(Math.random() * 8) + 1;;
 
         var personDiv = document.createElement('div');
-        personDiv.setAttribute('id', 'person-card');
+        personDiv.setAttribute('class', 'person-card');
         // var centerboxDiv = document.createElement('div');
         // centerboxDiv.setAttribute('class', 'contact-box center-version');
         // var anchortag = document.createElement('a');
@@ -57,7 +57,7 @@ function loadPerson(data){
             <a class="fa fa-fw fa-phone"></a>
             <a class="fa fa-fw fa-envelope"></a>
             <a class="fa fa-fw fa-solid fa-globe"></a>
-            <a class="fa fa-fw fa-google-plus"></a>
+      
         </div>
     </article>
         `;
@@ -67,7 +67,7 @@ function loadPerson(data){
      //   centerboxDiv.appendChild(anchortag);
         // centerboxDiv.appendChild(personFooter);
         personDiv.innerHTML = personBody;
-        document.getElementsByClassName('row active-with-click')[0].appendChild(personDiv);
+        document.getElementById('profiles-cont').appendChild(personDiv);
         
     }
 }
@@ -85,6 +85,7 @@ xhttp.send();
 
 $(function() {
     $('.material-card > .mc-btn-action').click(function () {
+        console.log("heelo")
         var card = $(this).parent('.material-card');
         var icon = $(this).children('i');
         icon.addClass('fa-spin-fast');

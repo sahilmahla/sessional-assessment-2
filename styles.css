@@ -1,7 +1,7 @@
 body{margin-top:20px;
     background:#eee;
     }
-#person-card{
+#profiles-cont .person-card{
     width: 350px;
 }    
 .row{
