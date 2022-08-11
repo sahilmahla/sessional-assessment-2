@@ -391,7 +391,7 @@ body{margin-top:20px;
 }
 .material-card .mc-footer h4 {
   position: absolute;
-  top: 368px;
+  top: 292px;
   left: 30px;
   padding: 0;
   margin: 0;
@@ -1490,3 +1490,44 @@ h3 {
   font-weight: 200;
 }
 
+
+
+.footer{
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    background: #263238;
+    text-align: center;
+    color: #f4f4f4;
+    margin: 0px;
+}
+
+.icons{
+    padding-top: 1rem;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #f4f4f4;
+}
+
+.company-name{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+}    
+
+@media(min-width: 501px) and (max-width: 768px){
+    html{
+    font-size: 50%;
+    }
+}    
